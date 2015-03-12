@@ -165,7 +165,18 @@
             $this->assertEquals(79, $result);
         }
 
+        function test_realWord()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'Epicodus';
 
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(13, $result);
+        }
 
 
     }
