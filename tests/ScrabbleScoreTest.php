@@ -18,6 +18,20 @@
         $this->assertEquals('1', $result);
     }
 
+    function test_duplicateSingleLetter()
+    {
+        //arrange
+        $test_scrabble = new ScrabbleScore;
+        $input = 'AA';
+
+        //act
+        $result = $test_scrabble->scrabble_score_calculator($input);
+
+        //assert
+        $this->assertEquals('2', $result);
+
+    }
+
 
 
 
