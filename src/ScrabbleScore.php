@@ -5,7 +5,7 @@
 
         function scrabble_score_calculator($input)
         {
-            $one_point = array ('A', 'E');
+            $one_point = array ('A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T');
             $split_input = str_split($input);
             $number = array();
             foreach ($split_input as $letter_input) {
