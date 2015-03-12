@@ -91,13 +91,13 @@
         {
             //arrange
             $test_scrabble = new ScrabbleScore;
-            $input = 'ADE';
+            $input = 'ADB';
 
             //act
             $result = $test_scrabble->scrabble_score_calculator($input);
 
             //assert
-            $this->assertEquals(6, $result)
+            $this->assertEquals(6, $result);
         }
 
 
