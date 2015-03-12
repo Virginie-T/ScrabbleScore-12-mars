@@ -32,6 +32,10 @@ output: "6"
 input: "ADBF"
 output: "10"
 
+7 Return the sum of the value of many different letters
+input: "ADBFK"
+output: "15"
+
 6 Return the sum of the value of a letter of every value
 input: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 output:  87
