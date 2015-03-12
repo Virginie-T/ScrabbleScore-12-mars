@@ -18,6 +18,12 @@
                         array_push($number, $letter_input);
                     }
                 }
+                foreach ($two_point as $letter) {
+                    if ($letter_input == $letter) {
+                        $letter_input = 2;
+                        array_push($number, $letter_input);
+                    }
+                }
             }
             $output = array_sum($number);
             return $output;
