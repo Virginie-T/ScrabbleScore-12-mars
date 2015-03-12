@@ -47,3 +47,7 @@ output: "33"
 10 Return the sum of the value of a letter of every value
 input: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 output:  79
+
+11 Return the score of a real word
+input: "Epicodus"
+output: 13
