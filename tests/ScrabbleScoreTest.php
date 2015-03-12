@@ -15,7 +15,7 @@
         $result = $test_scrabble->scrabble_score_calculator($input);
 
         //assert
-        $this->assertEquals('1', $result);
+        $this->assertEquals(1, $result);
     }
 
     function test_duplicateSingleLetter()
@@ -28,7 +28,7 @@
         $result = $test_scrabble->scrabble_score_calculator($input);
 
         //assert
-        $this->assertEquals('2', $result);
+        $this->assertEquals(2, $result);
 
     }
 

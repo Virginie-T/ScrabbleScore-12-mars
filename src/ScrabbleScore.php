@@ -5,8 +5,20 @@
 
         function scrabble_score_calculator($input)
         {
-            $input = 1;
-            return $input;
+            $one_point = array ('A', 'E');
+            $split_input = str_split($input);
+            $number = array();
+            foreach ($split_input as $letter_input) {
+
+                foreach ($one_point as $letter) {
+                    if ($letter_input == $letter) {
+                        $letter_input = 1;
+                        array_push($number, $letter_input);
+                    }
+                }
+            }
+            $output = array_sum($number);
+            return $output;
         }
 
     }
