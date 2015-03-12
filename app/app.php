@@ -13,6 +13,11 @@
         return $app['twig']->render('form.twig');
     });
 
+    $app->get('/score', function() use ($app) {
+        $scrabble_word_score = new ScrabbleScore;
+
+    });
+
     return $app;
 
 ?>
