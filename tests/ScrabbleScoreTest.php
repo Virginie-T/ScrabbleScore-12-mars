@@ -43,6 +43,20 @@
 
             //assert
             $this->assertEquals(2, $result);
+
+        }
+
+        function test_differentLettersDifferentValue()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'AD';
+
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(3, $result);
             
         }
 
