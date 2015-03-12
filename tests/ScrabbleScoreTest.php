@@ -84,7 +84,20 @@
 
             //assert
             $this->assertEquals(5, $result);
-            
+
+        }
+
+        function test_multiLetterMultiValues()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'ADE';
+
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(6, $result)
         }
 
 
