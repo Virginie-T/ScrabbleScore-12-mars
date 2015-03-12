@@ -48,7 +48,12 @@
                         array_push($number, $letter_input);
                     }
                 }
-
+                foreach ($eight_point as $letter) {
+                    if ($letter_input == $letter) {
+                        $letter_input = 8;
+                        array_push($number, $letter_input);
+                    }
+                }
 
             }
             $output = array_sum($number);
