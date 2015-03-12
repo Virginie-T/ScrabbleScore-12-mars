@@ -100,6 +100,19 @@
             $this->assertEquals(6, $result);
         }
 
+        function test_fourPointMethod()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'ADBF';
+
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(10, $result);
+        }
+
 
 
     }

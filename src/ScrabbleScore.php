@@ -36,6 +36,8 @@
                         array_push($number, $letter_input);
                     }
                 }
+        
+
             }
             $output = array_sum($number);
             return $output;
