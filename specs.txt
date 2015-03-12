@@ -1,0 +1,25 @@
+Scrabble Specs!
+
+1 Return the value of a letter
+input: "A"
+output: "1"
+
+2 Return the sum of the values of multiple letters of the same value
+input: "AA"
+output: "2"
+
+3 Return the sum of the values of different letters of the same value
+input: "AE"
+output: "2"
+
+3 Return the sum of the values of multiple letters with different values
+input:"AD"
+output: "3"
+
+4 Return the sum of the values of multiple letters including duplicates
+input: "ADD"
+output: "5"
+
+5 Return the sum of the value of many different letters
+input: "ADB"
+output: "6"
