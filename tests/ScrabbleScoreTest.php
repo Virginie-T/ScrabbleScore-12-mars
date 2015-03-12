@@ -125,6 +125,7 @@
             //assert
             $this->assertEquals(15, $result);
         }
+
         function test_eightPointMethod()
         {
             //arrange
@@ -136,6 +137,19 @@
 
             //assert
             $this->assertEquals(23, $result);
+        }
+
+        function test_tenPointMethod()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'ADBFKJQ';
+
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(33, $result);
         }
 
 
