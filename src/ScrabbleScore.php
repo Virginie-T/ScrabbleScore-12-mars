@@ -10,6 +10,8 @@
             $two_point = array ('D', 'G');
             $three_point = array ('B', 'C', 'M', 'P');
             $four_point = array ('F', 'H', 'V', 'W', 'Y');
+            $five_point = array ('K');
+            $eight_point = array ('J', 'K');
             $split_input = str_split($input_uc);
             $number = array();
             foreach ($split_input as $letter_input) {
