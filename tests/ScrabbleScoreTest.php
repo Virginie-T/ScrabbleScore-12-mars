@@ -113,6 +113,19 @@
             $this->assertEquals(10, $result);
         }
 
+        function test_fivePointMethod()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'ADBFK';
+
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(15, $result);
+        }
+
 
 
     }
