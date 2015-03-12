@@ -13,6 +13,7 @@
             $five_point = array ('K');
             $eight_point = array ('J', 'K');
             $ten_point = array ('Q', 'Z');
+
             $split_input = str_split($input_uc);
             $number = array();
             foreach ($split_input as $letter_input) {
