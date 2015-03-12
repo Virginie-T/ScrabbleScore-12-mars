@@ -17,7 +17,7 @@
         $scrabble_word_score = new ScrabbleScore;
         $score = $scrabble_word_score->scrabble_score_calculator($_GET['word']);
 
-        
+        return $app['twig']->render('score.twig', array('result' => $score, 'input' => $_GET['word']));
     });
 
     return $app;
