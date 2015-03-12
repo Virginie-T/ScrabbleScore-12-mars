@@ -73,6 +73,19 @@
 
         }
 
+        function test_multiLetterAndDuplicate()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'ADD';
+
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(5, $result);
+            
+        }
 
 
 
