@@ -152,6 +152,19 @@
             $this->assertEquals(33, $result);
         }
 
+        function test_alphabet()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(79, $result);
+        }
+
 
     }
 

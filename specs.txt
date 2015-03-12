@@ -46,4 +46,4 @@ output: "33"
 
 10 Return the sum of the value of a letter of every value
 input: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-output:  87
+output:  79
