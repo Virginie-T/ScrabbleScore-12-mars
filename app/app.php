@@ -15,7 +15,9 @@
 
     $app->get('/score', function() use ($app) {
         $scrabble_word_score = new ScrabbleScore;
+        $score = $scrabble_word_score->scrabble_score_calculator($_GET['word']);
 
+        
     });
 
     return $app;
