@@ -32,6 +32,19 @@
 
         }
 
+        function test_duplicateSingleLetterCaseInsensitive()
+        {
+            //arrange
+            $test_scrabble = new ScrabbleScore;
+            $input = 'Aa';
+
+            //act
+            $result = $test_scrabble->scrabble_score_calculator($input);
+
+            //assert
+            $this->assertEquals(2, $result);
+        }
+
         function test_differentLettersSameValue()
         {
             //arrange
@@ -57,7 +70,7 @@
 
             //assert
             $this->assertEquals(3, $result);
-            
+
         }
 
 

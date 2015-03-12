@@ -8,6 +8,10 @@ output: "1"
 input: "AA"
 output: "2"
 
+2.5 Return the sum of the values of multiple letters of the same value, case-insensitive
+input: "Aa"
+output: "2"
+
 3 Return the sum of the values of different letters of the same value
 input: "AE"
 output: "2"
